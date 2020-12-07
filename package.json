@@ -1,0 +1,25 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:devops-intro": "spectacle -l 'DevOps Intro' --action build -s devops-intro/src/slides.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpratt/presentations.git"
+  },
+  "author": "zach@modzed.io",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/zpratt/presentations/issues"
+  },
+  "homepage": "https://github.com/zpratt/presentations#readme",
+  "dependencies": {
+    "spectacle": "^6.2.0"
+  },
+  "devDependencies": {
+    "spectacle-cli": "^0.6.2"
+  }
+}
