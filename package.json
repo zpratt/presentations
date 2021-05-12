@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:devops-intro": "spectacle -l 'DevOps Intro' --action build -s devops-intro/src/slides.mdx"
+    "build:devops-intro": "spectacle -l 'DevOps Intro' --action build -s devops-intro/src/slides.mdx",
+    "build:engineering-career": "spectacle -l 'Engineering Career Survival Guide' --action build -s engineering-career/src/slides.mdx"
   },
   "repository": {
     "type": "git",
