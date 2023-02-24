@@ -1,0 +1,82 @@
+import {Image, Box, Heading, UnorderedList, ListItem, FlexBox, OrderedList} from 'spectacle';
+import openingSlide from '../opening-slide.jpg';
+import chrisPratt from '../chris-pratt.jpg';
+import deereGif from '../deere.gif';
+import frustratedDog from '../frustrated-dog.jpg';
+
+<Box width={'95%'}>
+    <Heading>{'Intro to Webapps'}</Heading>
+    <Image src={openingSlide}/>
+</Box>
+
+---
+
+## `whoami`
+
+<Image src={chrisPratt} />
+
+---
+
+## `A bit about me`
+
+<FlexBox justifyContent={'space-between'}>
+    <Box>
+        <Image src={deereGif} />
+    </Box>
+    <Box>
+        <UnorderedList>
+            <ListItem>{'Writing code since \'98'}</ListItem>
+            <ListItem>{'Career: Linux Sys Admin -> Webapp Developer -> Architect -> Agile Coach -> Principal Engineer'}</ListItem>
+            <ListItem>{'some stuff in between'}</ListItem>
+        </UnorderedList>
+    </Box>
+</FlexBox>
+
+---
+
+# What are we going to do today?
+
+1. Learn a bit about tools involved
+1. Build a basic webapp (fullstack!)
+1. The session is broken up into a few challenges
+
+---
+
+<FlexBox justifyContent={'space-between'}>
+    <Box>
+        <Heading>{'If you get stuck?'}</Heading>
+        <Heading>{'Please ask for help!'}</Heading>
+    </Box>
+    <Box>
+        <Image src={frustratedDog}/>
+    </Box>
+</FlexBox>
+
+---
+
+# First Challenge
+
+<OrderedList>
+    <ListItem>{'Bootstrap environment using a custom codespace and template repository'}</ListItem>
+    <ListItem>{'Create a simple API that returns a hardcoded list'}</ListItem>
+    <ListItem>{'render() the list'}</ListItem>
+    <ListItem>{'Run tests'}</ListItem>
+</OrderedList>
+---
+
+# Second Challenge
+
+<OrderedList>
+    <ListItem>{'Use a grid for layout'}</ListItem>
+    <ListItem>{'Add a page to our app'}</ListItem>
+    <ListItem>{'Search the list client-side'}</ListItem>
+    <ListItem>{'Run tests'}</ListItem>
+</OrderedList>
+
+---
+
+### Resources
+
+* [Projects to teach yourself new languages/frameworks](https://github.com/tuvtran/project-based-learning)
+* [My kinda old guide on TDD'ing React](https://news.ycombinator.com/item?id=9406158)
+* [Deploy node.js app on AWS](https://github.com/sonikro/nodejs-api-aws-terraform-gha)
