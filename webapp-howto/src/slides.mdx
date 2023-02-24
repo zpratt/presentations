@@ -1,4 +1,4 @@
-import {Image, Box, Heading, UnorderedList, ListItem, FlexBox, OrderedList, Link} from 'spectacle';
+import {Image, Box, Heading, UnorderedList, ListItem, FlexBox, OrderedList, Link, Markdown} from 'spectacle';
 import openingSlide from '../opening-slide.jpg';
 import chrisPratt from '../chris-pratt.jpg';
 import deereGif from '../deere.gif';
@@ -63,6 +63,7 @@ import roadmap from '../roadmap.png';
     <Box>
         <p>{'I had to make a few choices in order to narrow the class down to an hour. Today we\'ll building an app using:'}</p>
         <UnorderedList>
+            <ListItem><Link href={'https://containers.dev/'} target={'_blank'}>{'devcontainers'}</Link></ListItem>
             <ListItem><Link href={'https://reactjs.org/docs/getting-started.html'} target={'_blank'}>{'React'}</Link></ListItem>
             <ListItem><Link href={'https://mui.com/material-ui/getting-started/installation/'} target={'_blank'}>{'mui'}</Link></ListItem>
             <ListItem><Link href={'https://nextjs.org/docs/getting-started'} target={'_blank'}>{'Next.js'}</Link></ListItem>
@@ -93,7 +94,8 @@ import roadmap from '../roadmap.png';
 
 <OrderedList>
     <ListItem>{'Bootstrap environment using a custom codespace and template repository'}</ListItem>
-    <ListItem>{'Create a simple API that returns a hardcoded list'}</ListItem>
+    <ListItem>{'Run tests'}</ListItem>
+    <ListItem>{'Use the simple API that returns a list of pizzas at /api/pizzas'}</ListItem>
     <ListItem>{'render() the list'}</ListItem>
     <ListItem>{'Run tests'}</ListItem>
 </OrderedList>
@@ -102,13 +104,16 @@ import roadmap from '../roadmap.png';
 
 # Build It
 
+* `useEffect` to fetch data
+* `useState` to store an in-memory copy of the /api/pizzas response and cause page to rerender
+
+remember you can use `npm test` for fast feedback
+
 ---
 
 # Second Challenge
 
 <OrderedList>
-    <ListItem>{'Use a grid for layout'}</ListItem>
-    <ListItem>{'Add a page to our app'}</ListItem>
     <ListItem>{'Search the list client-side'}</ListItem>
     <ListItem>{'Run tests'}</ListItem>
 </OrderedList>
@@ -116,6 +121,35 @@ import roadmap from '../roadmap.png';
 ---
 
 # Build It
+
+* more `useState`
+* `useCallback` to bind an event handler for search input
+
+remember you can use `npm test` for fast feedback
+
+---
+
+# Third Challenge
+
+* use a `next/link` to navigate to details of a pizza
+* add a page to show the details
+* add additional api at `/api/pizzas/id` to get details of specific pizza
+
+---
+
+# Build It
+
+* add a folder in `pages/api` called `pizzas`
+* add a file named `[id].js` in `pages/api/pizzas` and implement API
+* add a folder in `pages` called `pizzas`
+* add a file named `[id].js` in `pages/pizzas` and implement showing the details of one pizza
+* add a link in `index.js`
+
+---
+
+# Fourth Challenge
+
+* use `mui` to improve UI
 
 ---
 
