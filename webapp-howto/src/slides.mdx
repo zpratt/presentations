@@ -1,11 +1,12 @@
-import {Image, Box, Heading, UnorderedList, ListItem, FlexBox, OrderedList} from 'spectacle';
+import {Image, Box, Heading, UnorderedList, ListItem, FlexBox, OrderedList, Link} from 'spectacle';
 import openingSlide from '../opening-slide.jpg';
 import chrisPratt from '../chris-pratt.jpg';
 import deereGif from '../deere.gif';
 import frustratedDog from '../frustrated-dog.jpg';
+import roadmap from '../roadmap.png';
 
 <Box width={'95%'}>
-    <Heading>{'Intro to Webapps'}</Heading>
+    <Heading>{'How To Build A Web App'}</Heading>
     <Image src={openingSlide}/>
 </Box>
 
@@ -36,7 +37,7 @@ import frustratedDog from '../frustrated-dog.jpg';
 
 # What are we going to do today?
 
-1. Learn a bit about tools involved
+1. Learn a bit about tools/materials involved
 1. Build a basic webapp (fullstack!)
 1. The session is broken up into a few challenges
 
@@ -49,6 +50,37 @@ import frustratedDog from '../frustrated-dog.jpg';
     </Box>
     <Box>
         <Image src={frustratedDog}/>
+    </Box>
+</FlexBox>
+
+---
+
+# Tools / Materials
+
+<FlexBox style={{alignItems: 'first baseline'}}>
+    <Box>
+        <p>{'I had to make a few choices in order to narrow the class down to an hour. Today we\'ll building an app using:'}</p>
+        <UnorderedList>
+            <ListItem><Link>{'React'}</Link></ListItem>
+            <ListItem><Link>{'Next.js'}</Link></ListItem>
+            <ListItem><Link href={'https://codecept.io/'} target={'_blank'}>{'CodeceptJS'}</Link></ListItem>
+        </UnorderedList>
+    </Box>
+    <Box>
+        <p>{'There is a buffet of other options out there, including:'}</p>
+        <UnorderedList>
+            <ListItem><Link>{'Svelte'}</Link></ListItem>
+            <ListItem><Link>{'Angular'}</Link></ListItem>
+            <ListItem><Link>{'Vue'}</Link></ListItem>
+        </UnorderedList>
+    </Box>
+</FlexBox>
+
+---
+
+<FlexBox>
+    <Box width={'95%'}>
+        <Link href={'https://roadmap.sh/frontend'} target={'_blank'}><Image src={roadmap} maxWidth={'90%'} maxHeight={'90%'} /></Link>
     </Box>
 </FlexBox>
 
@@ -80,3 +112,4 @@ import frustratedDog from '../frustrated-dog.jpg';
 * [Projects to teach yourself new languages/frameworks](https://github.com/tuvtran/project-based-learning)
 * [My kinda old guide on TDD'ing React](https://news.ycombinator.com/item?id=9406158)
 * [Deploy node.js app on AWS](https://github.com/sonikro/nodejs-api-aws-terraform-gha)
+* [Frontend Developer Roadmap](https://roadmap.sh/frontend)
